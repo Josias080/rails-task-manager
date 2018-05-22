@@ -1,0 +1,12 @@
+<h1><%=@task.title%></h1>
+
+<div>
+<button type="button" class="btn btn-secondary"> <%= link_to "Edit", edit_path %> </button>
+</div>
+
+<div>
+  <p> <%=@task.details%></p>
+</div>
+
+
+<i class="fas fa-undo"></i> <%= link_to "Back to list", tasks_path %>
